@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>Stopwatches</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--
+	Sources:
+	Javascript tabs: https://www.w3schools.com/howto/howto_js_tabs.asp
+	-->
+</head>
+<body>
+	<!-- Tab links -->
+	<div class="tab">
+	  <button class="tablinks" onclick="open_tab(event, 'Stopwatch1')">Stopwatch1</button>
+	  <button class="tablinks" onclick="open_tab(event, 'Stopwatch2')">Stopwatch2</button>
+	  <button class="tablinks" onclick="open_tab(event, 'Ugly')">Ugly</button>
+	</div>
+
+	<!-- Tab content -->
+	<div id="Stopwatch1" class="tabcontent">
+	  <h3>Stopwatch1</h3>
+	  <p>Stopwatch1 is the capital city of England.</p>
+	</div>
+
+	<div id="Stopwatch2" class="tabcontent">
+	  <h3>Stopwatch2</h3>
+	  <p>Stopwatch2 is the capital of France.</p> 
+	</div>
+
+	<div id="Ugly" class="tabcontent">
+	  <h3>Ugly</h3>
+	  <p>Ugly is the capital of Japan.</p>
+	</div>
+</body>
+</html>
