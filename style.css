@@ -26,3 +26,14 @@ body {
         0 10px 10px rgba(0,0,0,.2), 
         0 20px 20px rgba(0,0,0,.15);
 }
+
+#Stopwatch2 {
+    border: 3px solid #73AD21;
+    border-width: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#Stopwatch3 {
+    font-family: 'Qwigley', cursive;
+}
