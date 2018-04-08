@@ -1,60 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Stopwatches</title>
-    <!-- Bootstrap core CSS -->
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Stopwatch 1
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stopwatch2.html">Stopwatch 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stopwatch3.html">Stopwatch 3</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Page Content -->
-    <div class="container">
-      <h1 class="mt-5">Stopwatch 1</h1>
-      <div id="Stopwatch1" class="tabcontent">
-	  <p class="s1_timer">
-	  	<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span>
-	  </p>
-	  <p>
-		<div class="pure-button-group" role="group" aria-label="...">
-		    <button id="button-start" class="pure-button">Start</button>
-		    <button id="button-stop" class="pure-button">Stop</button>
-		    <button id="button-reset" class="pure-button">Reset</button>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Name Generator</title>
+	<script language="Javascript" type="text/javascript" src="database.js">
+	</script>
+
+
+	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
+	<style type="text/css">
+		body{font-family: arial, serif;}
+		#wrapper{border-left:1px solid #cccccc;border-right:1px solid #cccccc;margin:0 auto;padding: 0 20px;width: 700px}
+		#generator{background:#e9f3f6;border:1px solid #cccccc;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
+		#footer{font-size: 10px; color: #999; margin: 30px 0 0 0;}
+		#footer a{color:#999}
+	</style>
+
+
+</head>
+<body onload="generator()">
+	<div id="wrapper">
+
+		<h1>iNomenclator</h1>
+		<p>Many girls' names have bits in common - Eliana, Mariana, and Ana all include "ana", while Bella, Isabelle, and Annabel all share the "belle" sound. Combine name prefixes and affixes using this generator, and discover combinations you might not have thought of. Keep in mind that not all will work as this program is coded using two combined random strings, but feel free to explore.
+		</p>
+		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
+		<div id="generator" >
+			<div id="placeholder"></div>
+			<input type="button" value="Generate Name" onclick="generator()" />
 		</div>
-	  </p>
+		<div id="footer">
+		<p>Calla Carter <a href="https://github.com/CallaJun">https://github.com/CallaJun</a>
+		</p>
+		</div>
 	</div>
-    </div>
-    <!-- /.container -->
-  </body>
+</body>
 </html>
