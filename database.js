@@ -63,17 +63,17 @@ function generator(){
 function generate_characters() {
 	var list = ["A vampire", "A professor", "An archeologist"];
 	var randomNumber = parseInt(Math.random() * list.length);
-	document.getElementById("characters").append(list[randomNumber])
+	document.getElementById("characters").innerHTML = list[randomNumber];
 }
 
 function generate_action() {
 	var list = ["murders", "commits a crime"];
 	var randomNumber = parseInt(Math.random() * list.length);
-	document.getElementById("action").append(list[randomNumber])
+	document.getElementById("action").innerHTML = list[randomNumber];
 }
 
 function generate_setting() {
 	var list = ["online", "at college"];
 	var randomNumber = parseInt(Math.random() * list.length);
-	document.getElementById("setting").append(list[randomNumber])
+	document.getElementById("setting").innerHTML = list[randomNumber];
 }
