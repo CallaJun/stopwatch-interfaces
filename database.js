@@ -61,14 +61,19 @@ function generator(){
 }
 
 function generate_characters() {
-	var list = ["A vampire"];
-	document.getElementById("characters").append("Molly")
+	var list = ["A vampire", "A professor", "An archeologist"];
+	var randomNumber = parseInt(Math.random() * list.length);
+	document.getElementById("characters").append(list[randomNumber])
 }
 
 function generate_action() {
-	document.getElementById("action").append("go/es to the dentist")
+	var list = ["murders", "commits a crime"];
+	var randomNumber = parseInt(Math.random() * list.length);
+	document.getElementById("action").append(list[randomNumber])
 }
 
 function generate_setting() {
-	document.getElementById("setting").append("online")
+	var list = ["online", "at college"];
+	var randomNumber = parseInt(Math.random() * list.length);
+	document.getElementById("setting").append(list[randomNumber])
 }
