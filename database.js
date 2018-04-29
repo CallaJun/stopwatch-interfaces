@@ -67,13 +67,13 @@ function generate_characters() {
 }
 
 function generate_action() {
-	var list = ["murders", "commits a crime"];
+	var list = ["murders", "commits a crime", "wins the lottery"];
 	var randomNumber = parseInt(Math.random() * list.length);
 	document.getElementById("action").innerHTML = list[randomNumber];
 }
 
 function generate_setting() {
-	var list = ["online", "at college"];
+	var list = ["online", "at college", "on the beach"];
 	var randomNumber = parseInt(Math.random() * list.length);
 	document.getElementById("setting").innerHTML = list[randomNumber];
 }

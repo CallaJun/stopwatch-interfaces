@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Name Generator</title>
+	<script language="Javascript" type="text/javascript" src="database.js">
+	</script>
+
+
+	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
+	<style type="text/css">
+  body {
+    background-image: url("https://images6.alphacoders.com/330/330109.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #wrapper {
+    text-align: center;
+  }
+	</style>
+
+
+</head>
+<body onload="generator()">
+	<div id="wrapper">
+
+		<h1>Name Generator</h1>
+		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
+		<div id="generator" >
+			<div id="result"></div>
+			<input type="button" value="Generate Name" onclick="generator()" />
+		</div>
+		<div id="footer">
+		<p>CMSC 251 - Human Computer Interaction
+		</p>
+		</div>
+	</div>
+</body>
+</html>
