@@ -61,19 +61,27 @@ function generator(){
 }
 
 function generate_characters() {
-	var list = ["A vampire", "A professor", "An archeologist"];
+	var list = ["A vampire", "A professor", "An archeologist", "JD", "Sorelle", "Dave",
+	"A Haverford student", "A dragon", "A penguin who can fly", "Kim Benston", "Nora",
+	"Ronald McDonald", "Kim Cassidy","A Bryn Mawr student", "Professor Lindell", "A young waitress",
+	"Sophia"];
 	var randomNumber = parseInt(Math.random() * list.length);
 	document.getElementById("characters").innerHTML = list[randomNumber];
 }
 
 function generate_action() {
-	var list = ["murders", "commits a crime", "wins the lottery"];
+	var list = ["murders a Haverford student", "commits a crime", "wins the lottery",
+	"presents a paper", "learns to speak Esperanto", "gets married", "launches an SQL injection attack",
+	"runs a marathon", "finds a handful of magic beans", "buys a guillotine", "enters a time portal",
+	"has a midlife crisis"];
 	var randomNumber = parseInt(Math.random() * list.length);
 	document.getElementById("action").innerHTML = list[randomNumber];
 }
 
 function generate_setting() {
-	var list = ["online", "at college", "on the beach"];
+	var list = ["online", "at college", "on the beach", "in a cave", "in the ocean",
+	"in an elevator", "in a Chinese restaurant", "in Founders", "in the DC", "in Carnegie Hall",
+	"in Madison Square Garden", "in an alley behind a rundown building"];
 	var randomNumber = parseInt(Math.random() * list.length);
 	document.getElementById("setting").innerHTML = list[randomNumber];
 }
