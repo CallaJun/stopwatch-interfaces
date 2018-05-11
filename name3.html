@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Name Generator</title>
+	<script language="Javascript" type="text/javascript" src="database.js">
+	</script>
+
+
+	<!-- Stylesheet. Change styles here. You can move the stylesheet to a extern file for better overview -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <style type="text/css">
+  body {
+    background-image: url("https://images6.alphacoders.com/330/330109.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #wrapper {
+    margin-top: 10%;
+    text-align: center;
+  }
+  #result {
+    font-size: 1.2em;
+    font-weight:normal;
+  }
+	</style>
+
+
+</head>
+<body onload="generator()">
+	<div id="wrapper">
+
+		<h1>Name Generator</h1>
+		<!-- The generator result and button. Change text on the button by changing button value. Be carefull changing ID's in this part -->
+		<div id="generator" >
+			<div id="result"></div><br />
+			<input class="btn btn-primary" type="button" value="Generate Name" onclick="generator()" />
+		</div>
+	</div>
+</body>
+</html>
