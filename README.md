@@ -11,3 +11,5 @@ https://callajun.github.io/stopwatch-interfaces/plot2.html
 Interface AB:
 https://callajun.github.io/stopwatch-interfaces/name3.html
 https://callajun.github.io/stopwatch-interfaces/plot3.html
+
+Note: Paper prototypes were delivered in an earlier assignment, and screenshots can be found in report.
